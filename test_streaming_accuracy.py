@@ -42,7 +42,7 @@ def read_wav_file(file_name):
 
 
 def main():
-    wav_file = r"E:\test\chouchun1.wav"
+    wav_file = r"C:\Users\Administrator\Desktop\Mankin2\D8albsounds光肩星天牛.wav"
     logging.basicConfig(level=logging.INFO)
 
     ground_truth_file = r'E:\1.txt'
@@ -61,7 +61,7 @@ def main():
 
     average_window_duration_ms = 200
     detection_threshold = 0.3
-    suppression_ms = 1000
+    suppression_ms = 600
     time_tolerance_ms = 100
     verbose = True
 
@@ -141,7 +141,7 @@ def main():
     stats.print_accuracy_stats()
 
     #show the recognized field in different colors
-    show_recognized(wav_file, log_file_path)
+    #show_recognized(wav_file, log_file_path)
 
 
 if __name__ == "__main__":

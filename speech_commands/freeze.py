@@ -149,7 +149,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--sample_rate',
       type=int,
-      default=44100,
+      default=22050,
       help='Expected sample rate of the wavs',)
   parser.add_argument(
       '--clip_duration_ms',
@@ -180,7 +180,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--start_checkpoint',
       type=str,
-      default=r'E:\tmp\speech_commands_train\conv.ckpt-100',
+      default=r'E:\tmp\speech_commands_train\conv.ckpt-1300',
       help='If specified, restore this pretrained model before any training.')
   parser.add_argument(
       '--model_architecture',
@@ -190,7 +190,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--wanted_words',
       type=str,
-      default='chouchun, tianniu, noise',
+      default='d4,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17',
       help='Words to use (others will be added to an unknown label)',)
   parser.add_argument(
       '--output_file', type=str, default=r'E:\1frozen_graph.pb', help='Where to save the frozen graph.')
